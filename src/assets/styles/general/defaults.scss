@@ -1,0 +1,51 @@
+.btn {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+  }
+}
+.form-control,
+.input-group-text {
+  border: none;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+  }
+}
+
+img,
+svg {
+  vertical-align: top;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+  }
+}
+
+.form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+}

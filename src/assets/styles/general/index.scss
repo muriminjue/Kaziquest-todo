@@ -1,0 +1,18 @@
+@import "../util/variables.scss";
+@import "./defaults.scss";
+@import "./header.scss";
+@import "./todolist.scss";
+
+body {
+  font-family: "Rubik";
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  .main {
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5% 0;
+  }
+}

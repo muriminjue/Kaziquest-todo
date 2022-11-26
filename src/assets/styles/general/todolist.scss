@@ -1,0 +1,20 @@
+.todo-list {
+  .todo-item {
+    .form-check-input[type="checkbox"] {
+      border-radius: 50%;
+    }
+    .btn-close {
+      display: none;
+    }
+    &:hover {
+      .btn-close {
+        display: inline-block;
+      }
+    }
+    .completed {
+      label {
+        text-decoration: line-through;
+      }
+    }
+  }
+}

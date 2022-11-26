@@ -1,18 +1,41 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="container">
+    <div
+      class="main d-flex flex-column align-items-center justify-content-center"
+    >
+      <Header />
+      <NewTask @getItems="getItems" />
+      <TodoList :todoItems="todoItems" />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import Header from "@/components/topBar.vue";
+import NewTask from "@/components/newTask.vue";
+import TodoList from "@/components/todoList.vue";
 export default {
   name: "HomeView",
+  data() {
+    return {
+      todoItems: [],
+    };
+  },
+  mounted() {
+    this.getItems();
+  },
+  methods: {
+    getItems() {
+      this.todoItems = JSON.parse(localStorage.getItem("todo")) || [];
+    },
+  },
   components: {
-    HelloWorld,
+    Header,
+    NewTask,
+    TodoList,
   },
 };
 </script>
+
+export default {
