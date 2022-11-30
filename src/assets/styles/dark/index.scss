@@ -1,0 +1,37 @@
+// Light mode specific styles
+
+@import "./../util/variables.scss";
+@import "./todolist.scss";
+@import "./newtask.scss";
+
+.dark {
+  body {
+    background-color: $Very-Dark-Blue;
+    background-image: url("~@/assets/images/img/bg-desktop-dark.jpg");
+
+    @media only screen and (max-width: $small_screen) {
+      background-image: url("~@/assets/images/img/BG-MOBILE-DARK.JPG");
+    }
+  }
+
+  .form-control {
+    color: $Light-Grayish-Blue-0 !important;
+    caret-color: $Bright-Blue;
+    background-color: $Very-Dark-Desaturated-Blue;
+    &::placeholder {
+      color: $Dark-Grayish-Blue;
+    }
+  }
+
+  .card {
+    background-color: $Very-Dark-Desaturated-Blue;
+    .list-group {
+      --bs-list-group-bg: $Very-Dark-Desaturated-Blue;
+    }
+  }
+  .footer {
+    p {
+      color: $Dark-Grayish-Blue-0;
+    }
+  }
+}

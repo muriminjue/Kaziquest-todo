@@ -1,13 +1,41 @@
 .todo-list {
+  border-radius: 0;
   .todo-item {
+    border: none;
     .form-check-input[type="checkbox"] {
       border-radius: 50%;
+      margin: 2px;
+      &:checked {
+        background: linear-gradient(
+          to bottom right,
+          hsl(192, 100%, 67%),
+          hsl(280, 87%, 65%)
+        );
+        content: url("~@/assets/images/icons/ICON-CHECK.SVG");
+        padding: 5px;
+
+        &:hover {
+          padding: 0px;
+        }
+      }
+      &:hover {
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        border: double 1.5px transparent;
+        cursor: url("~@/assets/images/icons/pointer.svg"), pointer !important;
+      }
     }
-    .btn-close {
+    .button {
       display: none;
+      &::before {
+        content: url("~@/assets/images/icons/ICON-CROSS.SVG");
+      }
+      @media only screen and (max-width: $small_screen) {
+        display: inline-block;
+      }
     }
     &:hover {
-      .btn-close {
+      .button {
         display: inline-block;
       }
     }
@@ -15,6 +43,36 @@
       label {
         text-decoration: line-through;
       }
+    }
+  }
+}
+.card-footer {
+  .lighter {
+    font-size: 13px;
+  }
+  .button:hover {
+    cursor: url("~@/assets/images/icons/pointer.svg"), pointer !important;
+  }
+}
+
+.footer-menu {
+  @media only screen and (max-width: $small_screen) {
+    display: none !important;
+  }
+  .button {
+    font-size: 16px;
+  }
+}
+
+.mobile-footer {
+  display: none !important;
+
+  @media only screen and (max-width: $small_screen) {
+    display: flex !important;
+  }
+  .mobile-footer-menu {
+    .button {
+      font-size: 16px;
     }
   }
 }

@@ -1,4 +1,9 @@
-.btn {
+.button {
+  text-decoration: none;
+  border: none;
+  background: none;
+  outline: none;
+  box-shadow: none;
   &:hover,
   &:focus,
   &:active {
@@ -19,6 +24,11 @@
     border: none;
     text-decoration: none;
   }
+}
+
+
+.form-control{
+  height: 70px;
 }
 
 img,

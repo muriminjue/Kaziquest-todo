@@ -6,6 +6,7 @@
       <Header />
       <NewTask @getItems="getItems" />
       <TodoList :todoItems="todoItems" />
+      <Footer />
     </div>
   </div>
 </template>
@@ -15,6 +16,7 @@
 import Header from "@/components/topBar.vue";
 import NewTask from "@/components/newTask.vue";
 import TodoList from "@/components/todoList.vue";
+import Footer from "@/components/bottomFooter.vue";
 export default {
   name: "HomeView",
   data() {
@@ -34,8 +36,7 @@ export default {
     Header,
     NewTask,
     TodoList,
+    Footer,
   },
 };
 </script>
-
-export default {

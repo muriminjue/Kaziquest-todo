@@ -1,7 +1,10 @@
+// General app styles
+
 @import "../util/variables.scss";
 @import "./defaults.scss";
 @import "./header.scss";
 @import "./todolist.scss";
+@import "./footer.scss";
 
 body {
   font-family: "Rubik";
@@ -14,5 +17,12 @@ body {
     margin-right: auto;
     margin-left: auto;
     padding: 5% 0;
+
+    @media only screen and (max-width: $small_screen) {
+      max-width: 90%;
+    }
+    .card {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
   }
 }

@@ -1,0 +1,70 @@
+.dark {
+  .todo-list {
+    .todo-item {
+      border-bottom: 1px solid $Very-Dark-Grayish-Blue-0;
+      background-color: $Very-Dark-Desaturated-Blue;
+      .form-check-input[type="checkbox"] {
+        background-color: $Very-Dark-Desaturated-Blue;
+        border-color: $Very-Dark-Grayish-Blue-1;
+
+        &:hover {
+          border-color: transparent;
+          background-image: linear-gradient(
+              $Very-Dark-Desaturated-Blue,
+              $Very-Dark-Desaturated-Blue
+            ),
+            linear-gradient(
+              to bottom right,
+              hsl(192, 100%, 67%),
+              hsl(280, 87%, 65%)
+            );
+        }
+      }
+      .completed {
+        label {
+          color: $Very-Dark-Grayish-Blue-0;
+        }
+      }
+      .incomplete {
+        label {
+          color: $Light-Grayish-Blue-0;
+        }
+      }
+    }
+  }
+  .card-footer {
+    background-color: $Very-Dark-Desaturated-Blue !important;
+    .lighter {
+      color: $Dark-Grayish-Blue-0 !important;
+    }
+    .button:hover {
+      color: $Light-Grayish-Blue-hover !important;
+    }
+  }
+
+  .footer-menu {
+    .button {
+      color: $Dark-Grayish-Blue-0;
+    }
+    .active {
+      color: $Bright-Blue;
+    }
+    &:hover {
+      color: $Light-Grayish-Blue-hover;
+    }
+  }
+
+  .mobile-footer {
+    .mobile-footer-menu {
+      .button {
+        color: $Dark-Grayish-Blue-0;
+      }
+      .active {
+        color: $Bright-Blue;
+      }
+      &:hover {
+        color: $Light-Grayish-Blue-hover;
+      }
+    }
+  }
+}

@@ -1,6 +1,26 @@
 @import "./../util/variables.scss";
+@import "./header.scss";
+@import "./todolist.scss";
 
 body {
   background-color: $Very-Light-Gray;
   background-image: url("~@/assets/images/img/bg-desktop-light.jpg");
+
+  @media only screen and (max-width: $small_screen) {
+    background-image: url("~@/assets/images/img/BG-MOBILE-LIGHT.JPG");
+  }
+}
+
+.form-control {
+  color: $Very-Dark-Grayish-Blue !important;
+  caret-color: $Bright-Blue;
+  &::placeholder {
+    color: $Dark-Grayish-Blue;
+  }
+}
+
+.footer {
+  p {
+    color: $Light-Grayish-Blue;
+  }
 }

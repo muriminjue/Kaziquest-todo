@@ -1,0 +1,11 @@
+.dark {
+  .new-task {
+    .input-group-text {
+      background-color: $Very-Dark-Desaturated-Blue !important;
+      .form-check-input {
+        background-color: $Very-Dark-Desaturated-Blue;
+        border-color: $Very-Dark-Grayish-Blue-1;
+      }
+    }
+  }
+}
