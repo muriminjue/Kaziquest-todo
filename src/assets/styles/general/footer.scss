@@ -1,9 +1,10 @@
 .footer {
   padding: 10px;
-  position: absolute;
-  bottom: 5rem;
+  position: fixed;
+  bottom: 2rem;
   margin-top: auto;
   margin-bottom: auto;
+  z-index: -1;
   p {
     margin-left: -5px;
   }
