@@ -35,6 +35,7 @@
       }
     }
     &:hover {
+      cursor: url("~@/assets/images/icons/pointer.svg"), pointer !important;
       .button {
         display: inline-block;
       }
